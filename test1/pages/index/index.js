@@ -10,11 +10,6 @@ Page({
     motto: app.globalData.app_data,
     userInfo: {}
   },
-  toIndex2: function(){
-    wx.navigateTo({
-      url: 'index2'
-    })
-  },
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
