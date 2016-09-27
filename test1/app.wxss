@@ -1,10 +1,29 @@
-/**app.wxss**/
+/**app.wxss*
 .container {
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
   box-sizing: border-box;
-} 
+} */
+.mt20{
+  margin-top: 100rpx
+}
+.mt50{
+  margin-top: 50rpx
+}
+.alignC{
+  text-align: center
+}
+.w100{
+  width: 100rpx
+}
+.w200{
+  width: 200rpx
+}
+.w300{
+  width: 300rpx
+}
+.w400{
+  width: 400rpx
+}

@@ -1,29 +1,37 @@
-//index.js
-//获取应用实例
-var app = getApp()
-var str1 = "dsdsdsdsdsdsds43kfdvfehf84ytiuh";
-str1 = str1.substr(0, 10)
-console.log(str1 + '...')
-Page({
+var types = ['default', 'primary', 'warn']
+var pageObject = {
   data: {
-
-    motto: app.globalData.app_data,
-    userInfo: {}
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
+    defaultSize: 'default',
+    primarySize: 'default',
+    warnSize: 'default',
+    disabled: false,
+    plain: false,
+    loading: false
   }
-})
+}
+
+function ss(t){
+  pageObject[t] = function(e) {
+      var key = t + 'Size'
+      var changedData = {}
+      changedData[key] = this.data[key] === 'default' ? 'mini' : 'default'
+      this.setData(changedData)
+    }
+}
+for (var i = 0; i < types.length; i++) {
+  ss(types[i])  
+}
+
+// for (var i = 0; i < types.length; ++i) {
+//   (function(type) {
+//     pageObject[type] = function(e) {
+//       var key = type + 'Size'
+//       var changedData = {}
+//       changedData[key] =
+//         this.data[key] === 'default' ? 'mini' : 'default'
+//       this.setData(changedData)
+//     }
+//   })(types[i])
+// }
+
+Page(pageObject)
