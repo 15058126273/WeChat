@@ -1,4 +1,72 @@
-<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
+<modal hidden="{{modalHidden}}" title="dddddddddddddd" >
+
+
+
+
+<!-- action-sheet 底部栏-->
+<!--<action-sheet hidden="{{bottomHidden}}" bindchange="closeBottom">
+  <block wx:for="items">
+    <action-sheet-item>{{item}}</action-sheet-item>
+  </block>
+  <action-sheet-cancel>关闭吧</action-sheet-cancel>
+</action-sheet>
+<button bindtap="showBottom">出来吧！底部栏！！</button>-->
+
+<!-- switch 开关选择器 -->
+<!--<switch checked type="switch"/>
+<switch type="checkbox"/>-->
+
+<!-- slider 滑动选择器 -->
+<!--<slider min="0" max="100" step="1" show-value left-icon="cancel" right-icon="success"/>-->
+
+<!-- picker 滚动选择器-->
+<!--<picker mode="selector" value="{{index}}" range="{{items}}" bindchange="pickerChange">
+  <view >{{items[index]}}</view>
+</picker>-->
+
+<!-- label 控件辅助 -->
+<!--<view >
+<view >表单组件在label内</view>
+<checkbox-group bindchange="checkboxChange">
+  <view wx:for="{{checkboxItems}}">
+    <label>
+      <checkbox value="{{item.name}}" checked="{{item.checked}}"></checkbox>
+      <text >{{item.value}}</text>
+    </label>
+  </view>
+</checkbox-group>
+</view>
+<view >
+<view >label用for标识表单组件</view>
+<radio-group bindchange="radioChange">
+  <view  wx:for="{{radioItems}}">
+    <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}"></radio>
+    <view >
+      <view style="opacity:{{item.checked ? 1: 0}}"></view>
+    </view>
+    <label for="{{item.name}}"><text>{{item.name}}</text></label>
+  </view>
+</radio-group>
+</view>-->
+
+<!-- form 表单 -->
+<!--<form bindsubmit="formSubmit" bindreset="formReset" >
+  <slider show-value name="slider"/>
+  <view style="display: flex; flex-direction: row">
+    <button form-type="submit" >提交</button>
+    <button  form-type="reset" >重置</button>
+  </view>
+</form>-->
+
+<!-- checkbox 复选框-->
+<!--<checkbox-group>
+  <view wx:for="{{items}}">
+      <checkbox value="{{item[0]}}" checked="{{item[2]}}" />{{item[1]}}
+  </view>
+</checkbox-group>-->
+
+<!-- button 按钮-->
+<!--<button type="default" size="{{defaultSize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="default" hover-class="other-button-hover"> default </button>
 <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
         disabled="{{disabled}}" bindtap="primary"> primary </button>
@@ -6,13 +74,7 @@
         disabled="{{disabled}}" bindtap="warn"> warn </button>
 <button bindtap="setDisabled">点击设置以上按钮disabled属性</button>
 <button bindtap="setPlain">点击设置以上按钮plain属性</button>
-<button bindtap="setLoading">点击设置以上按钮loading属性</button>
-
-
-
-
-
-
+<button bindtap="setLoading">点击设置以上按钮loading属性</button>-->
 
 <!-- progress 进度条 -->
 <!--<progress class="mt50" percent="50" show-info stroke-width="6" color="grey" active/>-->

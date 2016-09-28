@@ -1,37 +1,18 @@
-var types = ['default', 'primary', 'warn']
-var pageObject = {
+Page({
   data: {
-    defaultSize: 'default',
-    primarySize: 'default',
-    warnSize: 'default',
-    disabled: false,
-    plain: false,
-    loading: false
+    items: ['美国','中国','巴西'],
+    bottomHidden: true
+  },
+  showBottom: function(e){
+    this.setData({
+      bottomHidden: false
+    })
+    console.log('出来啦'+e)
+  },
+  closeBottom: function(e) {
+    this.setData({
+      bottomHidden: true
+    })
+    console.log('关闭啦')
   }
-}
-
-function ss(t){
-  pageObject[t] = function(e) {
-      var key = t + 'Size'
-      var changedData = {}
-      changedData[key] = this.data[key] === 'default' ? 'mini' : 'default'
-      this.setData(changedData)
-    }
-}
-for (var i = 0; i < types.length; i++) {
-  ss(types[i])  
-}
-
-// for (var i = 0; i < types.length; ++i) {
-//   (function(type) {
-//     pageObject[type] = function(e) {
-//       var key = type + 'Size'
-//       var changedData = {}
-//       changedData[key] =
-//         this.data[key] === 'default' ? 'mini' : 'default'
-//       this.setData(changedData)
-//     }
-//   })(types[i])
-// }
-
-Page(pageObject)
+})

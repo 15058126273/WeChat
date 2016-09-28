@@ -27,3 +27,6 @@
 .w400{
   width: 400rpx
 }
+input{
+  border: 1px solid grey;
+}
