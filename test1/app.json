@@ -25,5 +25,6 @@
       "iconPath": "resource/ico/logs.png",
       "selectedIconPath": "resource/ico/logs.png"
     }]
-  }
+  },
+  "debug": "true"
 }

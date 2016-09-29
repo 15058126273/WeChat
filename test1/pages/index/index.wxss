@@ -11,6 +11,19 @@
 button{
   width: 300rpx
 }
+.myimage{
+    width: 750rpx;
+    height: 500rpx
+}
+
+.myvideo{
+    width: 750rpx;
+    height: 500rpx
+}
+.myvideo{
+    width: 750rpx;
+    height: 100%;
+}
 
 .label-1, .label-2{
     margin-bottom: 15px;

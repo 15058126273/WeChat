@@ -1,7 +1,32 @@
-<modal hidden="{{modalHidden}}" title="dddddddddddddd" >
+
+
+<button bindtap="mytap" >点击啦</button>
 
 
 
+<!-- canvas 画布-->
+<!--<canvas canvas-id="mycanvas" binderror="showError" />-->
+
+<!-- video 视频-->
+<!--<video class="myvideo" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" binderror="showError" />-->
+
+<!-- image 图片-->
+<!--<image class="myimage" src="{{poster}}" mode="scaleToFill" />-->
+
+<!-- audio 音频-->
+<!--<audio src="{{src}}" loop controls="{{controls}}" poster="{{poster}}" name="{{name}}" author="{{author}}" binderror="showError" bindplay="showPlay"/>-->
+
+<!-- loading 加载提示-->
+<!--<loading bindchange="change" >啥是啥是...</loading>-->
+
+<!-- toast 提示框-->
+<!--<toast hidden="{{toastHidden}}" duration="2000">呵呵</toast>
+<view wx:if="{{toastHidden}}">
+<button bindtap="showToast">出来吧！</button>
+</view>-->
+
+<!-- modal 模态弹窗-->
+<!--<modal hidden="{{modalHidden}}" title="dddddddddddddd" bindcancel="modalHidden" bindconfirm="modalConfirm">-->
 
 <!-- action-sheet 底部栏-->
 <!--<action-sheet hidden="{{bottomHidden}}" bindchange="closeBottom">
