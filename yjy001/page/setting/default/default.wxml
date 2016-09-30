@@ -1,0 +1,3 @@
+<view class="container" catchtouchstart="touchStart" catchtouchend="touchEnd" catchtouchmove="touchMove" catchtouchcancel="touchCancel">
+这里是具体内容哦
+</view>

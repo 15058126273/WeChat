@@ -1,0 +1,13 @@
+<view class="container">
+    <swiper class="swiper" indicator-dots autoplay current="{{swiper_index}}" 
+    interval="{{swiper_interval}}" duration="{{swiper_duration}}" bindchange="swiperChange">
+        <block wx:for="{{swiper_items}}">
+            <swiper-item>
+                <image class="swiper_image" src="{{item.src}}" mode="aspectFill"/>
+            </swiper-item>
+        </block>
+
+    </swiper>
+
+</view>
+

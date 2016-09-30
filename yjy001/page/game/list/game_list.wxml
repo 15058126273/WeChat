@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="game">
+        <block wx:for="{{games}}" wx:for-index="i" wx:for-item="game">
+            <view class="game_item">
+                <image class="game_image" mode="scaleToFill" src="{{game.image}}" />
+                <view class="game_text">
+                    <view class="game_title">{{game.name}}</view>
+                    <view class="game_desc">{{game.desc}}</view>
+                </view>
+                <button class="game_button" hover-class="game_button_hover" data-i="{{i}}" catchtap="playGame">玩玩看</button>
+            </view>
+        </block>
+    </view>
+</view>

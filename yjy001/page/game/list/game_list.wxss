@@ -1,0 +1,56 @@
+.game{
+    width: 700rpx;
+    height: 100%;
+    margin: 20rpx auto 0px auto;
+    
+}
+.game_item{
+    margin-bottom: 20rpx;
+    height: 70px;
+    width: 100%;
+    border: 1px solid #C8C8C8;
+    border-radius: 10rpx;
+    position: relative;
+}
+.game_image{
+    width: 150rpx;
+    height: 70px;
+    border-radius: 10rpx;
+}
+.game_text{
+    display: inline-block;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    height: 70px;
+    position:absolute;  
+    top:50%;
+    margin-top:-35px;
+    margin-left: 20rpx;
+}
+.game_title, .game_desc{
+    height: 30px;
+    margin-top: 5px;
+    line-height: 30px;
+}
+.game_title{
+    color: #5E716B
+}
+.game_desc{
+    color: #8C9491
+}
+.game_button{
+    background: #45D3BA;
+    color: white;
+    font-family: Microsoft YaHei;
+    position: absolute;
+    line-height: 40px;
+    width: 150rpx;
+    height: 40px;
+    font-size: 28rpx;
+    top: 15px;
+    right: 10px;
+    border: 0px;
+}
+.game_button_hover{
+    background: #58F3D8;
+}

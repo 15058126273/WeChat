@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "page/index/index",
+        "page/user/user",
+        "page/game/list/game_list",
+        "page/game/game/game",
+        "page/setting/setting",
+        "page/setting/default/default"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#666666",
+        "navigationBarTextStyle": "white",
+        "navigationBarTitleText": "首页",
+        "backgroundColor": "white",
+        "backgroundTextStyle": "dark",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "selectedColor": "#278DD5",
+        "list": [{
+            "pagePath": "page/index/index",
+            "text": "首页",
+            "iconPath": "resource/ico/home.png",
+            "selectedIconPath": "resource/ico/home.png"
+        },{
+            "pagePath": "page/game/list/game_list",
+            "text": "游戏",
+            "iconPath": "resource/ico/game.png",
+            "selectedIconPath": "resource/ico/game.png"
+        },{
+            "pagePath": "page/setting/setting",
+            "text": "设置",
+            "iconPath": "resource/ico/setting.png",
+            "selectedIconPath": "resource/ico/setting.png"
+        },{
+            "pagePath": "page/user/user",
+            "text": "关于我",
+            "iconPath": "resource/ico/mime.png",
+            "selectedIconPath": "resource/ico/mime.png"
+        }]
+    },
+    "debug": true
+
+}

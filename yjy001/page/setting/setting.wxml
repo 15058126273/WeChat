@@ -1,0 +1,37 @@
+<view class="container">
+    <view class="setting">
+        <view class="setting_item">
+            <text class="setting_text">背景音乐</text>
+            <switch class="setting_switch" disabled="{{bgmDisabled}}" checked="{{bgmStatus}}" type="switch" bindchange="changeBGM"/>
+        </view>
+    </view>
+
+    <view class="setting">
+        <view class="setting_item" data-menu="1" catchtap="enterMenu">
+            <text class="setting_text">虚拟菜单</text>
+            <text class="setting_enter">></text>
+        </view>
+        <view class="setting_item item_other" data-menu="2" catchtap="enterMenu">
+            <text class="setting_text">虚拟菜单</text>
+            <text class="setting_enter">></text>
+        </view>
+        <view class="setting_item item_other" data-menu="3" catchtap="enterMenu">
+            <text class="setting_text">虚拟菜单</text>
+            <text class="setting_enter">></text>
+        </view>
+        <view class="setting_item item_other" data-menu="4" catchtap="enterMenu">
+            <text class="setting_text">虚拟菜单</text>
+            <text class="setting_enter">></text>
+        </view>
+    </view>
+
+
+    <view class="setting">
+        <view class="setting_item" catchtap="clearStorage">
+            <text class="setting_button">清理缓存</text>
+        </view>
+    </view>
+
+    <loading hidden="{{loading}}">{{loadingText}}</loading>
+    <toast duration="1000" bindchange="hideToast" hidden="{{toast}}">{{toastText}}</toast>
+</view>
