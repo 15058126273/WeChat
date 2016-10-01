@@ -5,7 +5,7 @@
         "page/game/list/game_list",
         "page/game/game/game",
         "page/setting/setting",
-        "page/setting/default/default"
+        "page/setting/default/default" 
     ],
     "window": {
         "navigationBarBackgroundColor": "#666666",
