@@ -1,6 +1,13 @@
 
 Page({
     data: {
+        menus: [
+            {name: '菜单1',page: 'child1',color: 'red'},
+            {name: '菜单2',page: 'child2',color: 'green'},
+            {name: '菜单3',page: 'child3'},
+            {name: '菜单4',page: 'child4',color: 'yellow'},
+            {name: '菜单5',page: 'child5',color: 'blue'}
+            ],
         swiper_index: 0,
         swiper_interval: 3000,
         swiper_duration: 1000,
@@ -13,6 +20,13 @@ Page({
     },
     swiperChange: function(e) {
         //console.log(e)
+    },
+    openChild: function(e){
+        var child = e.currentTarget.dataset.child;
+        console.log(child);
+        wx.navigateTo({
+            url: '/page/index/child/child'
+        })
     },
     onReady: function() {
         console.log("............................................index onReady")

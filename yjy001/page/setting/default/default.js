@@ -1,18 +1,19 @@
 var app = getApp();
+var util = require("../../../utils/base.js")
 Page({
     data: {
 
     },
     touchStart: function(e) {
-        app.touchStart(this, e)
+        util.touch.touchStart(this, e)
     },
     touchMove: function(e){
-        app.touchMove(this, e)
+        util.touch.touchMove(this, e)
     },
     touchCancel: function(e){
-        app.touchCancel(this, e)
+        util.touch.touchCancel(this, e)
     },
     touchEnd: function(e){
-        app.touchEnd(this, e)
+        util.touch.touchEnd(this, e)
     }
 })

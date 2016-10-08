@@ -1,0 +1,4 @@
+<view class="container"  catchtouchstart="touchStart" catchtouchend="touchEnd" catchtouchmove="touchMove" catchtouchcancel="touchCancel">
+
+这里是菜单内容啦。
+</view>

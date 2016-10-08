@@ -10,3 +10,21 @@
     height: 100%;
     border-radius: 10rpx;
 }
+.menu_list{
+    width: 650rpx;
+    height: 100rpx;
+    margin: 20rpx auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.menu_item{
+    color: white;
+    font-size: 28rpx;
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    border-radius: 50rpx;
+    text-align: center;
+    border-bottom: 8rpx solid grey;
+}

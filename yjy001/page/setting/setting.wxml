@@ -2,7 +2,8 @@
     <view class="setting">
         <view class="setting_item">
             <text class="setting_text">背景音乐</text>
-            <switch class="setting_switch" disabled="{{bgmDisabled}}" checked="{{bgmStatus}}" type="switch" bindchange="changeBGM"/>
+            <switch class="setting_switch" disabled="{{bgmDisabled}}" checked="{{bgmStatus}}" 
+            type="switch" bindchange="changeBGM"/>
         </view>
     </view>
 

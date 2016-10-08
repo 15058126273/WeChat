@@ -9,5 +9,15 @@
 
     </swiper>
 
+    <view class="menu_list">
+        <block wx:for="{{menus}}" wx:for-index="i" wx:for-item="menu">
+            <view class="menu_item" data-child="{{menu.page}}" catchtap="openChild" style="background: radial-gradient(circle at {{(i+1)/menus.length*100}}% 0, #fff, {{menu.color?menu.color:'black'}})">{{menu.name}}</view>
+        </block>
+    </view>
+
+    <view class="" >
+
+    </view>
+
 </view>
 

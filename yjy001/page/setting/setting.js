@@ -1,4 +1,5 @@
 var app = getApp();
+var bgm = require("../../utils/bgm.js")
 Page({
     data: {
         loading: true,
@@ -15,20 +16,18 @@ Page({
                     bgmStatus: bgmStatus,
                     bgmDisabled: bgmDisabled
                 })
-            },
-            fail: function() {
-                console.log('获取背景音乐状态出错了')
+                
             }
         })
     },
     changeBGM: function(e) {
-        var bgmStatus = e.detail;
+        var bgmStatus = e.detail.value;
         if(bgmStatus){
-            app.playBGM();
+            bgm.bgm.playBGM();
         }else{
-            app.pauseBGM();
+            bgm.bgm.pauseBGM();
         }
-        
+        wx.setStorageSync("bgmStatus", bgmStatus)
         this.checkBGM();
     },
     clearStorage: function() {

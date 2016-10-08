@@ -1,5 +1,10 @@
 <view class="container" >
-    <view class="data_head">
-        <image class="data_image" mode="aspectFill" src="{{headImg}}" />
+    <view class="data_head" data-img="{{headImg}}" catchtap="showHead">
+        <image class="data_image" mode="aspectFill" src="{{headImg}}"/>
+        <text class="data_sign">{{userSign}}</text>
+    </view>
+
+    <view class="data_info" >
+
     </view>
 </view>
