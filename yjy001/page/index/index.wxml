@@ -1,7 +1,7 @@
 <view class="container">
     <swiper class="swiper" indicator-dots autoplay current="{{swiper_index}}" 
     interval="{{swiper_interval}}" duration="{{swiper_duration}}" bindchange="swiperChange">
-        <block wx:for="{{swiper_items}}">
+        <block wx:for="{{swiper_items}}" wx:key="unique">
             <swiper-item>
                 <image class="swiper_image" src="{{item.src}}" mode="aspectFill"/>
             </swiper-item>
@@ -10,13 +10,17 @@
     </swiper>
 
     <view class="menu_list">
-        <block wx:for="{{menus}}" wx:for-index="i" wx:for-item="menu">
+        <block wx:for="{{menus}}" wx:key="unique" wx:for-index="i" wx:for-item="menu">
             <view class="menu_item" data-child="{{menu.page}}" catchtap="openChild" style="background: radial-gradient(circle at {{(i+1)/menus.length*100}}% 0, #fff, {{menu.color?menu.color:'black'}})">{{menu.name}}</view>
         </block>
     </view>
 
-    <view class="" >
-
+    <view class="newses_list" >
+        <block wx:for="{{newses}}" wx:key="unique" wx:for-index="i" wx:for-item="news">
+            <view class="newses_item" data-child="{{news.page}}" catchtap="openNews">
+                <text class="newses_text">{{news.name}}</text>
+            </view>
+        </block>
     </view>
 
 </view>

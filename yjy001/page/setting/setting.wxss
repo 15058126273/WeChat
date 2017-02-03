@@ -33,8 +33,6 @@
     color: grey;
 }
 .setting_switch{
-    height: 32px;
     float: right;
     margin-right: 30rpx;
-    margin-top: 4px;
 }

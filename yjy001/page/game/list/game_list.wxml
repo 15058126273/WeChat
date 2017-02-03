@@ -1,6 +1,6 @@
 <view class="container">
     <view class="game">
-        <block wx:for="{{games}}" wx:for-index="i" wx:for-item="game">
+        <block wx:for="{{games}}" wx:key="unique" wx:for-index="i" wx:for-item="game">
             <view class="game_item">
                 <image class="game_image" mode="scaleToFill" src="{{game.image}}" />
                 <view class="game_text">

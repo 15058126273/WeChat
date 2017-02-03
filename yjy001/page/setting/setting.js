@@ -9,9 +9,12 @@ Page({
         var that = this;
         wx.getBackgroundAudioPlayerState({
             success: function(res){
+                console.log("当前音乐状态为："+res.status)
                 var status = res.status;
+                
                 var bgmStatus = status == 0 || status == 2? false: true;
                 var bgmDisabled = status == 2? true: false;
+                console.log("bgmStatus:"+bgmStatus + ",bgmDisabled:" + bgmDisabled);
                 that.setData({
                     bgmStatus: bgmStatus,
                     bgmDisabled: bgmDisabled
@@ -21,14 +24,18 @@ Page({
         })
     },
     changeBGM: function(e) {
+        var that = this;
         var bgmStatus = e.detail.value;
+        console.log("bgmStatus:"+bgmStatus)
         if(bgmStatus){
             bgm.bgm.playBGM();
         }else{
             bgm.bgm.pauseBGM();
         }
         wx.setStorageSync("bgmStatus", bgmStatus)
-        this.checkBGM();
+        that.setData({
+            bgmStatus: bgmStatus
+        })
     },
     clearStorage: function() {
         var that = this;
@@ -75,5 +82,6 @@ Page({
     },
     onPullDownRefreash: function() {
         console.log("下拉了")
+        wx.stopPullDownRefresh()
     }
 })

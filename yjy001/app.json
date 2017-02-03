@@ -2,6 +2,7 @@
     "pages": [
         "page/index/index",
         "page/index/child/child",
+        "page/index/news/news",
         "page/user/user",
         "page/game/list/game_list",
         "page/game/game/game",
@@ -41,6 +42,6 @@
             "selectedIconPath": "resource/ico/mime.png"
         }]
     },
-    "debug": true
+    "debug": false
 
 }
